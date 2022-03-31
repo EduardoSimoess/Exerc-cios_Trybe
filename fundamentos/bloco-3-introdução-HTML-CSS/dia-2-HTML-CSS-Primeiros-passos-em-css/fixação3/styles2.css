@@ -1,0 +1,18 @@
+<style>
+h1 {
+    font-family: sans-serif;
+}
+p {
+    font-weight: 600;
+    line-height: 4px;
+    text-align: justify;
+}
+body {
+    font-size: 16px;
+}
+ul {
+    font-style: oblique;
+    line-height: 40px;
+    text-decoration: line-through;
+}
+</style>
