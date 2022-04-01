@@ -1,0 +1,9 @@
+.Central {
+    text-align: center;
+}
+.listaOrdenada:hover {
+    background-color: aqua;
+}
+li:active {
+    font-family: 'Courier New', Courier, monospace;
+}
