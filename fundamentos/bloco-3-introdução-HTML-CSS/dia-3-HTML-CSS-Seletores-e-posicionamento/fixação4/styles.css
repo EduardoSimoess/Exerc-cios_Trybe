@@ -1,0 +1,18 @@
+div:hover {
+border-style: dashed;
+}
+.Amarelo:hover {
+    color: yellow;
+}
+.Verde:hover {
+    color: green;
+}
+.Azul:hover {
+    color: blue;
+}
+.Marrow:hover {
+    color: brown;
+}
+.Azulbb:hover {
+    color: lightblue;
+}
