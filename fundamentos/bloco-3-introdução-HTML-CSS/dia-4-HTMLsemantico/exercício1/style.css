@@ -1,0 +1,19 @@
+.textnVideo {
+    display: inline-block;
+}
+section {
+    width: 70%;
+    background-color: red;
+    border: 2px green solid;
+}
+aside {
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    vertical-align: top;
+    background-color: green;
+    border: 2px red solid;
+}
+footer {
+    padding: 20px;
+}
