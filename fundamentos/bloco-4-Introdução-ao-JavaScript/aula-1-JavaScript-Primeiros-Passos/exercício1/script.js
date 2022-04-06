@@ -29,5 +29,77 @@ else if (C>A && C>B) {
 console.log(C);   
 }
 else {
-    console.log("Os valores são iguais")
+    console.log("Os valores são iguais");
+}
+//Questão 4//
+if (C>0) {
+    console.log("Positivo"); 
+}
+else if (C<0) {
+    console.log("Negativo");
+}
+else {
+    console.log("Nulo");
+}
+//Questão 5//
+const A1 = 30;
+const A2 = 150;
+const A3 = 20;
+if ((A1+A2+A3) === 180 && A1>0 && A2>0 && A>0) {
+    console.log ("true");
+}
+else {
+    console.log("erro");   
+}
+//Questão 6//
+const peça = "torre";
+
+switch (peça.toLowerCase()) {
+    case "Torre": 
+     console.log("Torre -> Se move para frente e lados");
+     break;
+
+    case "Bispo": 
+     console.log("Bispo -> Se move nas diagonais");
+     break;
+
+    case "Rainha": 
+     console.log("Rainha -> Se move em todas as direções");
+     break;
+}
+//Questão 7//
+const nota = 70;
+if (nota >= 90) {
+    console.log (nota%100);
+    console.log ("A");
+}
+else if (nota >= 80 && nota <= 90 ) {
+    console.log (nota%100);
+    console.log ("B");
+}
+else if (nota >= 70 && nota <= 80 ) {
+    console.log (nota%100);
+    console.log ("C");
+}
+else if (nota >= 60 && nota <= 70 ) {
+    console.log (nota%100);
+    console.log ("D");
+}
+else if (nota >= 50 && nota <= 60 ) {
+    console.log (nota%100);
+    console.log ("E");
+}
+else if (nota < 50 ) {
+    console.log (nota%100);
+    console.log ("F");
+}
+else {
+    console.log ("erro");
+}
+//Questão 8//
+if (A % 2 == 0 || B % 2 == 0 || C % 2 == 0){
+    console.log ("true");
+}
+else {
+    console.log ("false")
 }
