@@ -77,3 +77,35 @@ for (index =1; index < 26; index +=1) {
     division.push(index/2); 
    }
    console.log (division);
+
+// Bônus 1
+let number = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let position = 0;
+let lesser;
+let  secondIndex;
+for (index = 1; index < number.length ; index +=1) {
+for (secondIndex=0; secondIndex < index; secondIndex +=1){
+    if (number[secondIndex]>number[index]){
+        lesser = number [index];
+        number [index] = number[secondIndex];
+        number [secondIndex] = lesser;  
+    }
+}
+
+
+}
+console.log (number);
+// Bonus 2
+let number2 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (index = 1; index < number2.length ; index +=1) {
+for (secondIndex=0; secondIndex < index; secondIndex +=1){
+    if (number2[secondIndex]<number2[index]){
+        lesser = number2 [index];
+        number2 [index] = number2[secondIndex];
+        number2 [secondIndex] = lesser;  
+    }
+}
+
+
+}
+console.log (number2);
