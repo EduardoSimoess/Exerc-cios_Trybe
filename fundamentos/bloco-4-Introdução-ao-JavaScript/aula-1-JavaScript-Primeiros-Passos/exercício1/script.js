@@ -105,7 +105,7 @@ if (A > 0 && B > 0) {
     console.log("Erro");
 }
 // Exercício 11
-const salárioBruto = 3000;
+const salário= 3000;
 let Líquido;
 if (salário <= 1556.94) {
     Líquido = 0.92 * salário;
@@ -118,4 +118,20 @@ if (salário <= 1556.94) {
 } else {
     console.log("Erro");
 }
-console.log (Líquido)
+let LíquidoIr;
+
+if (Líquido <= 1903,98) {
+    LíquidoIr = (0.925 * Líquido) + 142.80;
+} else if (Líquido > 1903.99 && Líquido <= 2826.65) {
+    LíquidoIr = (Líquido * 0.85) + 354.80;
+} else if (Líquido > 2826.66 && Líquido <= 3751.05) {
+    LíquidoIr = (Líquido * 0.85) + 636.16;
+} else if (Líquido >= 3751.06 && Líquido <= 4664.68) {
+    LíquidoIr = (Líquido*0.775) + 636.13;
+} else if (Líquido >= 4664.68) {
+    LíquidoIr = (Líquido*0.725) + 869.36;
+}
+else {
+    console.log ("Erro");
+}
+console.log (LíquidoIr);
