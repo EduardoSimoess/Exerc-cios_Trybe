@@ -25,7 +25,7 @@ for (index = 0; index < word.length; index += 1) {
         bigger = array[index];
     }
 }
-console.log (bigger);
+console.log(bigger);
 
 // 3.2
 size = bigger.length;
@@ -35,22 +35,55 @@ for (index = 0; index < word.length; index += 1) {
         smaller = array[index];
     }
 }
-console.log (smaller);
+console.log(smaller);
 
 
 // Questão 4
 let maiorPrimo = 1;
 let primo = true;
-for (index = 1; index < 51; index +=1)
-{
-  for (let i = 1; i < index; i +=1)
-  {
-      if (index % i === 0) {
-          primo = false;
-      }
-  }
-  if (primo) {
-      maiorPrimo = index;
-  }
+for (index = 1; index < 51; index += 1) {
+    for (let i = 1; i < index; i += 1) {
+        if (index % i === 0) {
+            primo = false;
+        }
+    }
+    if (primo) {
+        maiorPrimo = index;
+    }
 }
-console.log (maiorPrimo);
+console.log(maiorPrimo);
+
+// Bônus 1
+let asterisco = "*****";
+for (index = 0; index < asterisco.length; index += 1) {
+    console.log(asterisco);
+}
+
+// Bônus 2
+let triangulo = "";
+for (index = 0; index < asterisco.length; index += 1) {
+    triangulo += "*"
+    console.log(triangulo);
+}
+
+// Bônus 3
+let n = 5;
+let counter = 5;
+let invertida = "";
+
+for (let linha = 0; linha < n; linha += 1) {
+    for (let coluna = 0; coluna <= n; coluna += 1) {
+        if (coluna < counter) {
+            invertida += " ";
+        } else {
+            invertida += "*";
+        }
+
+    }
+   
+    console.log(invertida);
+    invertida = "";
+    counter -= 1;
+}
+
+
