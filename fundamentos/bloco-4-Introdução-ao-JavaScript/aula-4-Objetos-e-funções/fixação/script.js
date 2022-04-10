@@ -21,3 +21,22 @@ console.log ("A jogadora marta foi eleita a melhor do ano por 6 vezes: " + playe
 console.log ("A jogadora possui " + player ["medals"]["golden"] + " medalhas de ouro e " + player["medals"]["silver"] + " de prata");
 
 // Fixação 2
+let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge',
+  };
+
+for (let index in names) {
+    console.log ("Olá " + names[index]);
+}
+
+let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
+
+for (let key in car) {
+    console.log (key, car[key]);
+}
