@@ -1,3 +1,5 @@
+// Adições
+
 // Quesito 1
 let body = document.getElementsByTagName('body')[0];
 let title1 = document.createElement('h1');
@@ -63,3 +65,15 @@ for (index = 0; index < 3; index += 1){
     h3.innerText = "h3 - title";
     main.appendChild(h3);
 }
+
+// Alterações e remoções
+
+// Quesito 1
+title1.className = 'title';
+
+// Quesito 2
+for (index = 0; index < 3; index += 1){
+    let title3 = document.getElementsByTagName('h3')[index];
+    title3.className = ' description';
+}
+
