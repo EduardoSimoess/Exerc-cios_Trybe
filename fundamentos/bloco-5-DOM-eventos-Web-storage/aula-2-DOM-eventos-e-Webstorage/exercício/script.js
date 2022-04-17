@@ -8,3 +8,13 @@ body.appendChild(title1);
 let main = document.createElement('main');
 main.className = 'main-content';
 body.appendChild(main);
+
+// Quesito 3
+let section1 = document.createElement('section');
+section1.className = 'center-content';
+main.appendChild(section1);
+
+// Quesito 4
+let paragraph1 = document.createElement('p');
+section1.appendChild(paragraph1);
+paragraph1.innerText = 'Exercício feito para desenvolver minhas habilidades em JavaScript e DOM.'
