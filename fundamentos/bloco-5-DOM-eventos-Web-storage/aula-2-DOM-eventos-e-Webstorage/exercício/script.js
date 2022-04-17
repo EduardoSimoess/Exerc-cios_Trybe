@@ -51,7 +51,7 @@ let listItens = [
     'JavaScript ES6',
     'CSS',
     'Higher Order',
-    'Testes assincrons',
+    'Testes assincronos',
 ];
 for (let index = 0; index < listItens.length; index += 1){
     let listItem = document.createElement('li');
@@ -76,4 +76,22 @@ for (index = 0; index < 3; index += 1){
     let title3 = document.getElementsByTagName('h3')[index];
     title3.className = ' description';
 }
+
+// Quesito 3
+main.removeChild(section2);
+
+// Questão 4
+section3.style.marginRight = "auto";
+
+// Quesito 5
+section1.style.backgroundColor = "green";
+
+// Quesito 6
+let remotions = 2;
+for (index = 0; index < remotions; index += 1){
+    let last = unorderedList.lastElementChild;
+    unorderedList.removeChild(last);
+}
+
+
 
