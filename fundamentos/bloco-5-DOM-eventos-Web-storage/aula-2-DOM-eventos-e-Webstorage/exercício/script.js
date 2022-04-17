@@ -18,3 +18,13 @@ main.appendChild(section1);
 let paragraph1 = document.createElement('p');
 section1.appendChild(paragraph1);
 paragraph1.innerText = 'Exercício feito para desenvolver minhas habilidades em JavaScript e DOM.'
+
+// Quesito 5
+let section2 = document.createElement('section');
+section2.className = 'left-content';
+main.appendChild(section2);
+
+// Quesito 6
+let section3 = document.createElement('section');
+section3.className = 'right-content';
+main.appendChild(section3);
