@@ -18,21 +18,20 @@ function reciveClass(){
 input.addEventListener("input", firstTech);
 
 function firstTech(input){
-    firstLi.innerText = input.target.innerHTML;
+    firstLi.innerText = Event.target.innerText;
 }
 
 // Quesito 4
-let container = document.getElementsByClassName('container');
-container.addEventListener("dblclick", redirect);
-function redirect{
-    window.location.replace('https://eduardosimoess.github.io/');
+myWebpage.addEventListener("dblclick", redirect);
+function redirect(){
+    window.open('https://eduardosimoess.github.io/', '_blank');
 }
 
-function resetText(event) {
-
-  event.target.innerText = 'Opção reiniciada';
- 
+// Quesito 6
+myWebpage.addEventListener("mouseenter", colorText);
+function colorText(){
+    myWebpage.style.backgroundColor = "green";
 }
 
-firstLi.addEventListener('dblclick', resetText);
+
 
