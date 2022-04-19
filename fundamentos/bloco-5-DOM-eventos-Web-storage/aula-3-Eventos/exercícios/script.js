@@ -56,21 +56,61 @@ botaoFeriaodos.addEventListener('click', function () {
     
 })
 
-// Quesito 4
+// Quesito 4/5 - Não consegui o retorno
 buttonName("Sexta-feira", 'btn-friday');
 
 let botaoSexta = document.getElementById('btn-friday');
-
 botaoSexta.addEventListener('click', function () {
     let sextas = document.getElementsByClassName('friday');
     let sextaNumber = document.getElementsByClassName('friday');
     let text = 'sextou';
     for (index = 0; index < sextas.length; index += 1) {
-        if (sextas[index] !== text) {
-            sextas[index].innerText = text;
+        if (sextas[index].innerText === text) {
+            sextas[index].innerText = Number(sextas[index].previousElementSibling.innerText) + 1;   
         } else {
-            sextas[index].innerText = sextaNumber[index];
-            console.log(sextas[index].innerText);
+            sextas[index].innerText = text;
         }
     }
 })
+
+// Quesito 6
+days.addEventListener('mouseover', function (event){
+    event.target.style.fontSize = "30px";
+    event.target.style.fontWeight = '600';
+})
+days.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = '10'
+})
+
+// Quesito 7
+let tasksDad = document.getElementsByClassName ('my-tasks')[0];
+function createTask (stringTask){
+    let task = document.createElement('span');
+    tasksDad.appendChild(task);
+    task.innerText = stringTask;
+    task.id = 'tarefa';
+}
+createTask('Wash the dishes');
+
+// Quesito 8
+function color (cor) {
+    let color = document.createElement('div');
+    color.className = 'task';
+    tasksDad.appendChild(color);
+    color.style.backgroundColor = cor;
+}
+color("pink");
+
+// Quesito 9
+let mark = document.querySelector('.task');
+console.log(mark.backgroundColor);
+let marking= document.className('task selected');
+mark.addEventListener('click', function(event){
+    if (marking.length === 0){
+        event.target.className = 'task selected';
+    } else {
+        event.target.className = 'task';
+    }
+})
+
