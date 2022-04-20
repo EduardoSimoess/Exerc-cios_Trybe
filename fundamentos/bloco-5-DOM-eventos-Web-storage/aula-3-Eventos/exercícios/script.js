@@ -56,7 +56,7 @@ botaoFeriaodos.addEventListener('click', function () {
     
 })
 
-// Quesito 4/5 - Não consegui o retorno
+// Quesito 4/5
 buttonName("Sexta-feira", 'btn-friday');
 
 let botaoSexta = document.getElementById('btn-friday');
@@ -104,8 +104,7 @@ color("pink");
 
 // Quesito 9
 let mark = document.querySelector('.task');
-console.log(mark.backgroundColor);
-let marking= document.className('task selected');
+let marking= document.getElementsByClassName('task selected');
 mark.addEventListener('click', function(event){
     if (marking.length === 0){
         event.target.className = 'task selected';
