@@ -1,5 +1,5 @@
-let button = document.getElementById('sendButton');
+// let button = document.getElementById('sendButton');
 
-button.addEventListener('click', function(event){
-    event.preventDefault();
-})
+// button.addEventListener('click', function(event){
+//     event.preventDefault();
+// })
