@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <label for="name">Nome:
+            <input type="text" minlength="10" maxlength="40" id="name" required>
+        </label>
+        <br><br>
+        <label for="email">e-mail:
+            <input type="email" minlength="10" maxlength="50" id="email" required>
+        </label>
+        <br><br>
+        <label for="cidade">
+            <input type="radio" name="destination" id="cidade"> Cidade
+        </label>
+        <label for="campo">
+            <input type="radio" name="destination" id="campo">Campo
+        </label>
+        <label for="praia">
+            <input type="radio" name="destination" id="praia">Praia
+        </label>
+        <label for="montanha">
+            <input type="radio" name="destination" id="montanha">Montanha
+        </label>
+        <br><br>
+        <label for="profile">Escreva o motivo pelo qaul você merece o prêmio: <br>
+            <textarea name="" id="profile" cols="30" rows="10" maxlength="500" required></textarea>
+        </label>
+        <br><br>
+        <label for="date">Qual a melhor data para sua viagem:
+            <input type="date" id="date">
+        </label>
+        <br><br>
+        <label for="oportunities">
+            <input type="checkbox" id="oportunities">Gostaria de receber outras incríveis oportunidades como essa.
+        </label>
+        <br><br>
+        <label for="publicity">
+            <input type="checkbox" id="publicity" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+        <br><br>
+        <label for="image">Insira sua foto de perfil: <br>
+            <input type="file" id="image" required>
+        </label>
+        <br><br>
+        <button type="submit" id="sendButton">Enviar!</button>
+        <br><br>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
