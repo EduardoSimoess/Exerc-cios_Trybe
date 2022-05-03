@@ -14,35 +14,60 @@
     <script src="Bootstrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <h1 class="display-2 text-center">Promoção de vagem da Trybe</h1>
+    </header>
+
     <form action="" method="get">
-        <label for="name">Nome:
-            <input class="form-control" type="text" minlength="10" maxlength="40" id="name" required>
-        </label>
+
+        <div>
+            <label for="name" class="input-group-text">Nome:
+                <input class="form-control" type="text" minlength="10" maxlength="40" id="name" required>
+            </label>
+        </div>
+        <div>
+            <br><br>
+            <label for="email" class="input-group-text">e-mail:
+                <input class="form-control" type="email" minlength="10" maxlength="50" id="email" required>
+            </label>
+
+        </div>
+
         <br><br>
-        <label for="email">e-mail:
-            <input class="form-control" type="email" minlength="10" maxlength="50" id="email" required>
-        </label>
+
+        <div class="form-check">
+            <label for="cidade" class="form-check-label ">
+                <input class="form-check-input" type="radio" name="destination" id="cidade"> Cidade
+            </label>
+        </div>
+        <div class="form-check">
+            <label for="campo" class="form-check-label">
+                <input class="form-check-input" type="radio" name="destination" id="campo">Campo
+            </label>
+        </div>
+        <div class="form-check">
+            <label for="praia" class="form-check-label">
+                <input class="form-check-input" type="radio" name="destination" id="praia">Praia
+            </label>
+        </div>
+        <div class="form-check">
+            <label for="montanha" class="form-check-label">
+                <input class="form-check-input" type="radio" name="destination" id="montanha">Montanha
+            </label>
+        </div>
+
         <br><br>
-        <label for="cidade">
-            <input type="radio" name="destination" id="cidade"> Cidade
-        </label>
-        <label for="campo">
-            <input type="radio" name="destination" id="campo">Campo
-        </label>
-        <label for="praia">
-            <input type="radio" name="destination" id="praia">Praia
-        </label>
-        <label for="montanha">
-            <input type="radio" name="destination" id="montanha">Montanha
-        </label>
+        <div>
+            <label for="profile" class="form-label">Escreva o motivo pelo qaul você merece o prêmio: <br>
+                <textarea class="form-control is-invalid" name="" id="profile" cols="30" rows="10" maxlength="500" required></textarea>
+            </label>
+        </div>
         <br><br>
-        <label for="profile">Escreva o motivo pelo qaul você merece o prêmio: <br>
-            <textarea name="" id="profile" cols="30" rows="10" maxlength="500" required></textarea>
-        </label>
-        <br><br>
+
         <label for="datepicker">Qual a melhor data para sua viagem: <br>
             <!-- <input class="form-control" type="date" id="myInputId"> -->
             <input type="text" id="datepicker">
@@ -61,10 +86,13 @@
             <input class="form-control" type="file" id="image" required>
         </label>
         <br><br>
-        <button type="submit" id="sendButton">Enviar!</button>
+        <button type="submit" id="sendButton"  class="btn btn-success">Enviar!</button>
         <br><br>
+
         <script>
-            var picker = new Pikaday({ field: $('#datepicker')[0] });
+            var picker = new Pikaday({
+                field: $('#datepicker')[0]
+            });
         </script>
     </form>
 
