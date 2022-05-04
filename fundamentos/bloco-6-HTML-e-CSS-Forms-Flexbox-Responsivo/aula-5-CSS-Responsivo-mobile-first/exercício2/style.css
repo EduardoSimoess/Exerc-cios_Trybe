@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0%;
+  }
+  header{
+      background-color: lightgray;
+      padding: 5px;
+  }
+  header ul{
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+  }
+header p{
+    margin-left: 25%;
+}
+h2, h3{
+    text-align: center;
+    margin: 5%;
+}
+.aside-one ul{
+    list-style: none;
+}
+aside{
+    margin: 5% 10%;
+    
+}
+.h1{
+    text-align: center;
+}
+.text{
+    line-height: 125%;
+    margin: 5%;
+}
+
+@media screen and (min-width: 400px){
+
+}
