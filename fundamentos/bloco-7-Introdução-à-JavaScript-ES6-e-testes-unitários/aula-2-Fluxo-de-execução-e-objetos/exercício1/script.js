@@ -26,7 +26,7 @@ const numberTest = () => {
   const value1 = document.getElementById('value1').value;
   const value2 = document.getElementById('value2').value;
   if(isNaN(value1) === false || isNaN(value2) === false){
-    throw new Error(document.getElementById('result').innerHTML ='Ambos os valores devem ser números.');
+    throw new Error('Ambos os valores devem ser números.');
   }
 }
 window.onload = () => {
@@ -42,7 +42,7 @@ window.onload = () => {
       // document.getElementById('value1').value = '';
       // document.getElementById('value2').value = '';
     } catch (error) {
-      throw error.message;
+      document.getElementById('result').innerHTML = error.message;
     } finally {
       document.getElementById('value1').value = '';
       document.getElementById('value2').value = '';
