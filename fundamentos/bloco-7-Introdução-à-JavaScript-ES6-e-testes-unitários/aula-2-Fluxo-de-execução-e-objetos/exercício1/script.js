@@ -19,20 +19,20 @@ const holeCatcher = () => {
   const value1 = document.getElementById('value1').value;
   const value2 = document.getElementById('value2').value;
   if (value1 === '' || value2 === '') {
-    throw new Error(document.getElementById('result').innerHTML ='Ambos os valores devem ser preenchidos.');
+    throw new Error(document.getElementById('result').innerHTML = 'Ambos os valores devem ser preenchidos.');
   }
 }
 const numberTest = () => {
   const value1 = document.getElementById('value1').value;
   const value2 = document.getElementById('value2').value;
-  if(isNaN(value1) === false || isNaN(value2) === false){
+  if (isNaN(value1) === false || isNaN(value2) === false) {
     throw new Error('Ambos os valores devem ser números.');
   }
 }
 window.onload = () => {
   const button = document.getElementById('button');
   button.addEventListener('click', () => {
-    try{
+    try {
       holeCatcher();
       numberTest();
       const value1 = document.getElementById('value1').value;
@@ -47,6 +47,5 @@ window.onload = () => {
       document.getElementById('value1').value = '';
       document.getElementById('value2').value = '';
     }
-  }
-)};
-
+  })
+};
