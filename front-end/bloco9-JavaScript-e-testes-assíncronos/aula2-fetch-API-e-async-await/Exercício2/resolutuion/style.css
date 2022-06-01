@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+header {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: blue;
+}
+.crypto {
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    border-style: dotted;
+    width: 30%;
+    background-color: white;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 20px;
+    background-color: lightgray;
+    align-items: center;
+}
